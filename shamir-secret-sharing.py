@@ -2,6 +2,15 @@ import random
 from math import ceil
 from decimal import Decimal
 
+"""
+Shamir Secret Sharing (SSS) is one of the most popular implementations of a secret sharing scheme.
+
+SSS is based on the mathematical concept of polynomial interpolation which states that a polynomial
+of degree t-1 can be reconstructed from the knowledge of t or more points, known to be lying on the
+curve.
+
+"""
+
 FIELD_SIZE = 10**5
 
 def reconstruct_secret(shares):
